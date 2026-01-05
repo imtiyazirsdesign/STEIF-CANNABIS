@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #060b18;
+}
+
+/* NAVBAR */
+.cannabis-navbar {
+    background: linear-gradient(90deg, #050b17, #0a1a33);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    min-height: 64px;
+}
+
+/* BRAND */
+.navbar-brand {
+    color: #fff !important;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+}
+
+/* BACK */
+.back-btn {
+    color: #cbd5f5;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.back-btn:hover {
+    color: #5cc8ff;
+}
+
+/* LINKS */
+.nav-link {
+    color: #cbd5f5;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    background: rgba(92, 200, 255, 0.15);
+    color: #5cc8ff;
+}
+
+/* ACTIVE */
+.nav-link.active {
+    background: linear-gradient(90deg, #008cff, #00c6ff);
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
+}
+
+/* ICONS */
+.nav-link i {
+    font-size: 15px;
+}
+
+/* TOGGLER */
+.navbar-toggler {
+    border: none;
+    filter: invert(1);
+}
+
+/* MOBILE */
+@media (max-width: 1199px) {
+    .navbar-collapse {
+        background: #050b17;
+        border-radius: 12px;
+        padding: 16px;
+        margin-top: 12px;
+    }
+
+    .nav-link {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+/* ACTIVE NAV (BOOTSTRAP WAY) */
+.nav-link[aria-current="page"] {
+    background: linear-gradient(90deg, #008cff, #00c6ff);
+    color: #fff !important;
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
+}
+
+
+
+/* HERO SECTION */
+.hero-section {
+    position: relative;
+    min-height: 80vh;
+
+    /* 🔥 Unified premium background */
+    /* background:
+        radial-gradient(circle at 70% 50%, rgba(0, 200, 255, 0.08), transparent 45%),
+        linear-gradient(90deg, #050b14 0%, #071320 50%, #050b14 100%); */
+
+    overflow: hidden;
+}
+
+/* WRAPPER */
+.hero-wrapper {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* LEFT CONTENT */
+.hero-left {
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 6%;
+    z-index: 2;
+}
+
+/* RIGHT IMAGE */
+.hero-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* TREE IMAGE – BALANCED GLOW */
+.hero-right img {
+    width: 95%;
+    height: auto;
+    object-fit: contain;
+
+    /* ✨ Softer glow so it blends */
+    filter:
+        drop-shadow(0 0 25px rgba(0, 200, 255, 0.25)) drop-shadow(0 0 60px rgba(0, 200, 255, 0.12));
+
+    animation: float 6s ease-in-out infinite;
+}
+
+/* FLOAT EFFECT */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+}
+
+/* HEX FRAME */
+.hex-frame {
+    padding: 70px 40px;
+    max-width: 620px;
+    clip-path: polygon(6% 0%, 94% 0%,
+            100% 50%,
+            94% 100%, 6% 100%,
+            0% 50%);
+    box-shadow: 0 0 40px rgba(0, 160, 255, 0.25);
+    backdrop-filter: blur(6px);
+}
+
+/* TEXT */
+.hex-frame h1 {
+    font-size: clamp(38px, 5vw, 64px);
+    color: white;
+    letter-spacing: 2px;
+}
+
+.hex-frame h1 span {
+    color: #66d9ff;
+}
+
+.hex-frame h5 {
+    margin-top: 10px;
+    color: #bfe9ff;
+}
+
+.hex-frame p {
+    margin-top: 14px;
+    color: #cbd5f5;
+    font-size: 15px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 18px;
+}
+
+.btn-primary-custom {
+    background: linear-gradient(90deg, #008cff, #00c6ff);
+    padding: 12px 26px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 160, 255, 0.5);
+}
+
+.btn-outline-custom {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 12px 26px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.btn-outline-custom:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+/* SCROLL ICON */
+.scroll-indicator {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #66d9ff;
+    font-size: 22px;
+    animation: bounce 1.6s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 10px);
+    }
+}
+
+/* MOBILE (unchanged logic) */
+@media (max-width: 991px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+    .hero-section {
+        background:
+            linear-gradient(rgba(5, 11, 20, 0.85), rgba(5, 11, 20, 0.85)),
+            url("../assets/hero-img.png") center bottom / contain no-repeat,
+            #050b14;
+
+        min-height: 100vh;
+    }
+
+    .hero-left {
+        padding: 80px 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/* premium-section */
+.premium-section {
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD */
+.premium-card {
+    position: relative;
+    max-width: 980px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow:
+        0 20px 60px rgba(0, 140, 255, 0.25),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* IMAGE */
+.premium-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* BOTTOM GRADIENT */
+.premium-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to top,
+            rgba(5, 11, 23, 0.95) 20%,
+            rgba(5, 11, 23, 0.6) 40%,
+            transparent 65%);
+}
+
+/* CONTENT */
+.premium-content {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 2;
+}
+
+.premium-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.premium-content p {
+    font-size: 14px;
+    color: #9adfff;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .premium-content {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .premium-content h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .premium-card {
+        border-radius: 12px;
+    }
+
+    .premium-content h4 {
+        font-size: 16px;
+    }
+}
+
+/* Product-section */
+.products-section {
+    padding: 80px 0;
+}
+
+/* TITLE */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #9adfff;
+    margin-bottom: 50px;
+}
+
+/* CARD */
+.product-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 26px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #0a162b, #0c1e36);
+    border: 1px solid rgba(0, 180, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 180, 255, .25);
+}
+
+/* ICON */
+.icon-box {
+    min-width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #00b4ff, #008cff);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    box-shadow: 0 0 15px rgba(0, 180, 255, .6);
+}
+
+/* TEXT */
+.product-card h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.product-card p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #a8cfff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .product-card {
+        padding: 18px;
+    }
+}
+
+
+/* ================= ABOUT STEIF ================= */
+.about-steif {
+    padding: 120px 0;
+    color: #cbd5f5;
+}
+
+/* CONTAINER */
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+    text-align: center;
+}
+
+/* LABEL */
+.about-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 6px 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #66d9ff;
+    border: 1px solid rgba(102, 217, 255, 0.4);
+    border-radius: 30px;
+}
+
+/* HEADING */
+.about-steif h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 60px;
+    color: #ffffff;
+}
+
+.about-steif h2 span {
+    color: #66d9ff;
+}
+
+/* GRID */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.about-card {
+    padding: 35px 30px;
+    background: rgba(7, 19, 32, 0.6);
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 55px rgba(0, 200, 255, 0.25);
+}
+
+/* CARD TITLES */
+.about-card h4 {
+    color: #66d9ff;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+/* TEXT */
+.about-card p {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: #cbd5f5;
+}
+
+/* VALUES LIST */
+.about-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-card ul li {
+    font-size: 14.5px;
+    padding: 8px 0;
+    color: #bfe9ff;
+    border-bottom: 1px dashed rgba(102, 217, 255, 0.25);
+}
+
+.about-card ul li:last-child {
+    border-bottom: none;
+}
+
+/* HIGHLIGHT CARD */
+.highlight-card {
+    border-color: rgba(102, 217, 255, 0.5);
+    box-shadow: 0 0 50px rgba(0, 200, 255, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-steif {
+        padding: 80px 0;
+    }
+}
+
+/* ================= OUR GENETICS ================= */
+.genetics-section {
+    padding: 120px 0;
+    color: #cbd5f5;
+}
+
+.genetics-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+}
+
+/* HEADER */
+.genetics-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.genetics-header h2 {
+    font-size: clamp(32px, 4vw, 48px);
+    color: #ffffff;
+}
+
+.genetics-header h2 span {
+    color: #66d9ff;
+}
+
+.genetics-header p {
+    margin-top: 12px;
+    color: #bfe9ff;
+    font-size: 15px;
+}
+
+/* GRID */
+.genetics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.genetics-card {
+    position: relative;
+    padding: 28px 26px;
+    border-radius: 16px;
+    background: rgba(7, 19, 32, 0.65);
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.genetics-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 60px rgba(0, 200, 255, 0.3);
+}
+
+/* CARD TOP */
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.card-top h4 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* TAG */
+.strain-tag {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    background: rgba(102, 217, 255, 0.15);
+    border: 1px solid rgba(102, 217, 255, 0.4);
+    color: #66d9ff;
+}
+
+/* THC */
+.thc {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #7cf5c4;
+}
+
+/* DESCRIPTION */
+.genetics-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cbd5f5;
+}
+
+/* TYPE ACCENTS */
+.genetics-card.indica {
+    border-left: 3px solid #8b5cf6;
+}
+
+.genetics-card.sativa {
+    border-left: 3px solid #f97316;
+}
+
+.genetics-card.hybrid {
+    border-left: 3px solid #22c55e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .genetics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .genetics-section {
+        padding: 90px 0;
+    }
+}
