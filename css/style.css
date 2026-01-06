@@ -91,6 +91,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 140, 255, 0.6);
 }
 
+/* LOGO BRAND */
+.logo-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-brand img {
+    height: 34px;              /* perfect navbar height */
+    width: auto;
+    object-fit: contain;
+}
+
+/* MOBILE LOGO ADJUST */
+@media (max-width: 576px) {
+    .logo-brand img {
+        height: 40px;
+    }
+}
 
 
 /* ================= HOME HERO ================= */
