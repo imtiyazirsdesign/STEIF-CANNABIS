@@ -1,0 +1,142 @@
+/* ================= PREROLLS HERO ================= */
+.prerolls-hero {
+    position: relative;
+    height: 65vh;
+    min-height: 420px;
+    background: url("../assets/prerollsheader.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.prerolls-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2, 9, 20, 0.75),
+        rgba(2, 9, 20, 0.95)
+    );
+}
+
+.prerolls-hero-content {
+    position: relative;
+    max-width: 900px;
+    padding: 0 6%;
+    color: #ffffff;
+}
+
+.prerolls-hero-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #66d9ff;
+    border: 1px solid rgba(102,217,255,.4);
+    border-radius: 30px;
+}
+
+.prerolls-hero-content h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    margin-bottom: 20px;
+}
+
+.prerolls-hero-content h1 span {
+    color: #66d9ff;
+}
+
+.prerolls-hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5f5;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ================= PREROLLS PRODUCTS ================= */
+.prerolls-products {
+    padding: 120px 0;
+    background: #020914;
+}
+
+.prerolls-products-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+}
+
+.prerolls-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* CARD */
+.prerolls-card {
+    background: rgba(7,19,32,.65);
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(0,200,255,.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 35px rgba(0,200,255,.15);
+    transition: all .35s ease;
+}
+
+.prerolls-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 60px rgba(0,200,255,.35);
+}
+
+/* IMAGE */
+.prerolls-image {
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.prerolls-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2,9,20,.15),
+        rgba(2,9,20,.9)
+    );
+}
+
+/* CONTENT */
+.prerolls-content {
+    padding: 22px;
+}
+
+.prerolls-content h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.prerolls-content p {
+    font-size: 14px;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .prerolls-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .prerolls-grid {
+        grid-template-columns: 1fr;
+    }
+    .prerolls-products {
+        padding: 90px 0;
+    }
+}

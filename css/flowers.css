@@ -1,0 +1,165 @@
+/* ================= FLOWERS HERO ================= */
+.flowers-hero {
+    position: relative;
+    height: 65vh;
+    min-height: 420px;
+    background: url("../assets/flowersheader.png") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* OVERLAY */
+.flowers-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2, 9, 20, 0.75),
+        rgba(2, 9, 20, 0.95)
+    );
+    z-index: 1;
+}
+
+/* CONTENT */
+.flowers-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 6%;
+    color: #ffffff;
+}
+
+/* TAG */
+.flowers-hero-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #66d9ff;
+    border: 1px solid rgba(102, 217, 255, 0.45);
+    border-radius: 30px;
+}
+
+/* TITLE */
+.flowers-hero-content h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.flowers-hero-content h1 span {
+    color: #66d9ff;
+}
+
+/* TEXT */
+.flowers-hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5f5;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ================= FLOWERS PRODUCTS ================= */
+.flowers-products {
+    padding: 120px 0;
+    background: #020914;
+}
+
+.flowers-products-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+}
+
+/* GRID */
+.flowers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* CARD */
+.flower-card {
+    background: rgba(7, 19, 32, 0.7);
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.flower-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 60px rgba(0, 200, 255, 0.35);
+}
+
+/* IMAGE */
+.flower-image {
+    height: 180px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.flower-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2, 9, 20, 0.2),
+        rgba(2, 9, 20, 0.9)
+    );
+}
+
+/* CONTENT */
+.flower-content {
+    padding: 22px;
+}
+
+.flower-content h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.flower-content p {
+    font-size: 14px;
+    color: #cbd5f5;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* TAG */
+.flower-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 11px;
+    border-radius: 20px;
+    color: #66d9ff;
+    border: 1px solid rgba(102, 217, 255, 0.4);
+    background: rgba(102, 217, 255, 0.08);
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .flowers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .flowers-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flowers-products {
+        padding: 90px 0;
+    }
+}
