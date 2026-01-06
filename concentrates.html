@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concentrates</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/concentrates.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="./css/style.css">
-
-<!-- Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- Add Animation on scroll -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="./css/concentrates.css">
 
 <body>
-     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -109,13 +113,13 @@
 
         </div>
     </nav>
-   <!-- ================= CONCENTRATES HERO ================= -->
+
+    <!-- ================= CONCENTRATES HERO ================= -->
     <section class="concentrates-hero">
 
         <div class="concentrates-hero-overlay"></div>
 
-        <div class="concentrates-hero-content">
-
+        <div class="concentrates-hero-content" data-aos="zoom-in">
             <span class="concentrates-hero-tag">CONCENTRATES</span>
 
             <h1>
@@ -127,7 +131,6 @@
                 High-potency extracts crafted for experienced users,
                 delivering bold flavor, strength, and precision.
             </p>
-
         </div>
 
     </section>
@@ -137,9 +140,19 @@
 
         <div class="concentrates-products-container">
 
+            <!-- SECTION HEADING -->
+            <div class="concentrates-section-head" data-aos="fade-up">
+                <h2> <span style="color: #66d9ff;">Explore</span> Premium Concentrates</h2>
+                <p>
+                    Advanced extraction methods deliver unmatched potency,
+                    terpene richness, and a refined cannabis experience.
+                </p>
+            </div>
+
+            <!-- PRODUCTS GRID -->
             <div class="concentrates-grid">
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="0">
                     <div class="concentrates-image" style="background-image:url('./assets/live-resin.png')"></div>
                     <div class="concentrates-content">
                         <h4>Live Resin</h4>
@@ -147,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="concentrates-image" style="background-image:url('./assets/live-rosin.png')"></div>
                     <div class="concentrates-content">
                         <h4>Live Rosin</h4>
@@ -155,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="concentrates-image" style="background-image:url('./assets/shatter.png')"></div>
                     <div class="concentrates-content">
                         <h4>Shatter</h4>
@@ -163,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="concentrates-image" style="background-image:url('./assets/wax.png')"></div>
                     <div class="concentrates-content">
                         <h4>Wax</h4>
@@ -171,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="concentrates-image" style="background-image:url('./assets/diamonds.png')"></div>
                     <div class="concentrates-content">
                         <h4>Diamonds</h4>
@@ -179,7 +192,7 @@
                     </div>
                 </div>
 
-                <div class="concentrates-card">
+                <div class="concentrates-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="concentrates-image" style="background-image:url('./assets/sauce.png')"></div>
                     <div class="concentrates-content">
                         <h4>Sauce</h4>
@@ -193,19 +206,18 @@
 
     </section>
 
-
-    <!-- Bootstrap JS -->
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <!-- Add Animation on scroll -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script>
         AOS.init({
-            duration: 800,
+            duration: 900,
             easing: "ease-in-out",
             once: false
         });
     </script>
+
 </body>
 
 </html>

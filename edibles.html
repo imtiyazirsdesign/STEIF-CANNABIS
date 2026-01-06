@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edibles</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/edibles.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class=" navbar navbar-expand-xl cannabis-navbar">
+        <div class="container-fluid px-4">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="back-btn">
+                    <i class="bi bi-arrow-left"></i> Back
+                </a>
+                <a class="navbar-brand" href="./index.html">STEIF CANNABIS</a>
+            </div>
+
+            <!-- TOGGLE -->
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2 mt-4 mt-xl-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./genetics.html">
+                            <i class="bi bi-diagram-3"></i> Genetics
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./flowers.html">
+                            <i class="bi bi-flower1"></i> Flowers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./prerolls.html">
+                            <i class="bi bi-box-seam"></i> Prerolls
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./concentrates.html">
+                            <i class="bi bi-droplet"></i> Concentrates
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vape.html">
+                            <i class="bi bi-lightning"></i> Vape
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./edibles.html">
+                            <i class="bi bi-cookie"></i> Edibles
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beverages.html">
+                            <i class="bi bi-cup-straw"></i> Beverages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./topicals.html">
+                            <i class="bi bi-bandaid"></i> Topicals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= EDIBLES HERO ================= -->
+    <section class="edibles-hero-gen">
+
+        <div class="edibles-hero-gen-overlay"></div>
+
+        <div class="edibles-hero-gen-content" data-aos="zoom-in">
+            <span class="edibles-hero-gen-tag">EDIBLES</span>
+
+            <h1>
+                Delicious & Discreet <br>
+                <span>Cannabis Edibles</span>
+            </h1>
+
+            <p>
+                Carefully crafted infused treats with precise dosing,
+                great taste, and long-lasting effects.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= EDIBLES PRODUCTS ================= -->
+    <section class="edibles-products-gen">
+
+        <div class="edibles-products-gen-container">
+
+            <!-- SECTION TITLE -->
+            <div class="edibles-section-head" data-aos="fade-up">
+                <h2> <span style="color: #66d9ff;">Explore Our</span> Premium Edibles</h2>
+                <p>
+                    A wide selection of expertly infused products designed for
+                    taste, potency, and a consistent experience every time.
+                </p>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="edibles-grid-gen">
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="0">
+                    <div class="edible-image-gen" style="background-image:url('./assets/gummies.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Gummies</h4>
+                        <p>Delicious fruit-flavored gummies</p>
+                    </div>
+                </div>
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edible-image-gen" style="background-image:url('./assets/chocolates.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Chocolates</h4>
+                        <p>Premium infused chocolates</p>
+                    </div>
+                </div>
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edible-image-gen" style="background-image:url('./assets/cookies.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Cookies</h4>
+                        <p>Classic cannabis cookies</p>
+                    </div>
+                </div>
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="300">
+                    <div class="edible-image-gen" style="background-image:url('./assets/hard-candies.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Hard Candies</h4>
+                        <p>Long-lasting, discreet treats</p>
+                    </div>
+                </div>
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="400">
+                    <div class="edible-image-gen" style="background-image:url('./assets/capsules.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Capsules</h4>
+                        <p>Precise dosing, no taste</p>
+                    </div>
+                </div>
+
+                <div class="edible-card-gen" data-aos="fade-up" data-aos-delay="500">
+                    <div class="edible-image-gen" style="background-image:url('./assets/tinctures.png')"></div>
+                    <div class="edible-content-gen">
+                        <h4>Tinctures</h4>
+                        <p>Fast-acting sublingual drops</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: "ease-in-out",
+            once: false
+        });
+    </script>
+
 </body>
+
 </html>

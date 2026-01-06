@@ -60,7 +60,7 @@
     margin: auto;
 }
 
-/* ================= CONCENTRATES PRODUCTS ================= */
+/* ================= PRODUCTS ================= */
 .concentrates-products {
     padding: 120px 0;
     background: #020914;
@@ -70,6 +70,25 @@
     max-width: 1200px;
     margin: auto;
     padding: 0 6%;
+}
+
+/* SECTION HEADING */
+.concentrates-section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.concentrates-section-head h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.concentrates-section-head p {
+    font-size: 16px;
+    color: #cbd5f5;
+    line-height: 1.7;
 }
 
 /* GRID */
@@ -100,18 +119,6 @@
     height: 180px;
     background-position: center;
     background-size: cover;
-    position: relative;
-}
-
-.concentrates-image::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(2, 9, 20, 0.15),
-        rgba(2, 9, 20, 0.9)
-    );
 }
 
 /* CONTENT */

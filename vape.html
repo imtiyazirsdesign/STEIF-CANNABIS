@@ -1,11 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vape</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/vape.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <nav class=" navbar navbar-expand-xl cannabis-navbar">
+        <div class="container-fluid px-4">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="back-btn">
+                    <i class="bi bi-arrow-left"></i> Back
+                </a>
+                <a class="navbar-brand" href="./index.html">STEIF CANNABIS</a>
+            </div>
+
+            <!-- TOGGLE -->
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2 mt-4 mt-xl-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./genetics.html">
+                            <i class="bi bi-diagram-3"></i> Genetics
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./flowers.html">
+                            <i class="bi bi-flower1"></i> Flowers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./prerolls.html">
+                            <i class="bi bi-box-seam"></i> Prerolls
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./concentrates.html">
+                            <i class="bi bi-droplet"></i> Concentrates
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vape.html">
+                            <i class="bi bi-lightning"></i> Vape
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./edibles.html">
+                            <i class="bi bi-cookie"></i> Edibles
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beverages.html">
+                            <i class="bi bi-cup-straw"></i> Beverages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./topicals.html">
+                            <i class="bi bi-bandaid"></i> Topicals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= VAPE HERO ================= -->
+    <section class="vape-hero">
+
+        <div class="vape-hero-overlay"></div>
+
+        <div class="vape-hero-content" data-aos="zoom-in">
+            <span class="vape-hero-tag">VAPE</span>
+
+            <h1>
+                Modern & Convenient <br>
+                <span>Cannabis Vape Products</span>
+            </h1>
+
+            <p>
+                Discreet, powerful, and flavorful vape solutions
+                designed for smooth hits and consistent performance.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= VAPE PRODUCTS ================= -->
+    <section class="vape-products">
+
+        <div class="vape-products-container">
+
+            <!-- SECTION TITLE -->
+            <div class="vape-section-head" data-aos="fade-up">
+                <h2> <span style="color: #66d9ff;">Explore Advanced</span> Vape Solutions</h2>
+                <p>
+                    Precision-engineered vape products delivering clean vapor,
+                    rich flavor profiles, and reliable performance.
+                </p>
+            </div>
+
+            <!-- GRID -->
+            <div class="vape-grid">
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="vape-image vape-510"></div>
+                    <div class="vape-content">
+                        <h4>510 Cartridges</h4>
+                        <p>Universal fit, premium oil</p>
+                    </div>
+                </div>
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="vape-image vape-disposable"></div>
+                    <div class="vape-content">
+                        <h4>Disposables</h4>
+                        <p>Ready to use, no charging needed</p>
+                    </div>
+                </div>
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="vape-image vape-live-resin"></div>
+                    <div class="vape-content">
+                        <h4>Live Resin Carts</h4>
+                        <p>Full spectrum, maximum flavor</p>
+                    </div>
+                </div>
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="vape-image vape-distillate"></div>
+                    <div class="vape-content">
+                        <h4>Distillate Carts</h4>
+                        <p>Pure, potent THC distillate</p>
+                    </div>
+                </div>
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="vape-image vape-pods"></div>
+                    <div class="vape-content">
+                        <h4>Pod Systems</h4>
+                        <p>Proprietary pods for perfect hits</p>
+                    </div>
+                </div>
+
+                <div class="vape-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="vape-image vape-battery"></div>
+                    <div class="vape-content">
+                        <h4>Batteries</h4>
+                        <p>Quality batteries for your carts</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: "ease-in-out",
+            once: false
+        });
+    </script>
+
 </body>
+
 </html>
