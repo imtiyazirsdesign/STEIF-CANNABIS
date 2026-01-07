@@ -1,0 +1,192 @@
+/* ================= BEVERAGES HERO ================= */
+.beverages-hero-gen {
+    position: relative;
+    height: 60vh;
+    min-height: 420px;
+
+    /* IMAGE BACKGROUND */
+    background: 
+        url("../assets/beveragesheader.png") center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.beverages-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2,9,20,.2), rgba(2,9,20,.9));
+}
+
+.beverages-hero-content {
+    position: relative;
+    max-width: 900px;
+    padding: 0 6%;
+    color: #fff;
+}
+
+.beverages-tag {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #66d9ff;
+    border: 1px solid rgba(102,217,255,.45);
+    border-radius: 30px;
+}
+
+.beverages-hero-content h1 {
+    font-size: clamp(38px, 5vw, 60px);
+    margin-bottom: 18px;
+}
+
+.beverages-hero-content h1 span {
+    color: #66d9ff;
+}
+
+.beverages-hero-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cbd5f5;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* ================= PRODUCTS ================= */
+.beverages-products-gen {
+    padding: 120px 0;
+    background: #020914;
+}
+
+.beverages-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 6%;
+}
+
+/* SECTION HEAD */
+.beverages-section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 70px;
+}
+
+.beverages-section-head h2 {
+    font-size: clamp(30px, 4vw, 42px);
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.beverages-section-head h2 span {
+    color: #66d9ff;
+}
+
+.beverages-section-head p {
+    font-size: 16px;
+    color: #cbd5f5;
+    line-height: 1.7;
+}
+
+/* GRID */
+.beverages-grid-gen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* CARD */
+.beverage-card-gen {
+    background: rgba(7, 19, 32, 0.75);
+    border-radius: 22px;
+    overflow: hidden; /* IMPORTANT */
+    border: 1px solid rgba(0, 200, 255, 0.25);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+    transition: all 0.35s ease;
+}
+
+.beverage-card-gen:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 60px rgba(0, 200, 255, 0.35);
+}
+
+/* IMAGE */
+.beverage-image-gen {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Square */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+}
+
+.beverage-card-gen:hover .beverage-image-gen {
+    transform: scale(1.06);
+}
+
+/* CONTENT */
+.beverage-content-gen {
+    padding: 22px;
+}
+
+.beverage-content-gen h4 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.beverage-content-gen p {
+    font-size: 14px;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+.beverage-card-gen:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 60px rgba(0, 200, 255, 0.35);
+}
+
+/* ICON */
+.beverage-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, #0f6b85, #0a4155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+/* TEXT */
+.beverage-card-gen h4 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.beverage-card-gen p {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+    .beverages-grid-gen {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .beverages-grid-gen {
+        grid-template-columns: 1fr;
+    }
+
+    .beverages-products-gen {
+        padding: 90px 0;
+    }
+}

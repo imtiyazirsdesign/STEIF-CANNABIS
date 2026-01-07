@@ -1,11 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topicals</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/topicals.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+ <!-- Navbar -->
+    <nav class=" navbar navbar-expand-xl cannabis-navbar">
+        <div class="container-fluid px-4">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="back-btn">
+                    <i class="bi bi-arrow-left"></i> Back
+                </a>
+                <a class="navbar-brand logo-brand" href="./index.html">
+                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                </a>
+
+            </div>
+
+            <!-- TOGGLE -->
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2 mt-4 mt-xl-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./genetics.html">
+                            <i class="bi bi-diagram-3"></i> Genetics
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./flowers.html">
+                            <i class="bi bi-flower1"></i> Flowers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./prerolls.html">
+                            <i class="bi bi-box-seam"></i> Prerolls
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./concentrates.html">
+                            <i class="bi bi-droplet"></i> Concentrates
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vape.html">
+                            <i class="bi bi-lightning"></i> Vape
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./edibles.html">
+                            <i class="bi bi-cookie"></i> Edibles
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beverages.html">
+                            <i class="bi bi-cup-straw"></i> Beverages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./topicals.html">
+                            <i class="bi bi-bandaid"></i> Topicals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= TOPICALS HERO ================= -->
+    <section class="topicals-hero-gen">
+
+        <div class="topicals-hero-overlay"></div>
+
+        <div class="topicals-hero-content" data-aos="zoom-in">
+            <span class="topicals-hero-tag">TOPICALS</span>
+
+            <h1>
+                Therapeutic <br>
+                <span>Cannabis Topicals</span>
+            </h1>
+
+            <p>
+                Cannabis-infused skincare and relief products
+                designed for targeted comfort and relaxation.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= TOPICALS PRODUCTS ================= -->
+    <section class="topicals-products-gen">
+
+        <div class="topicals-container">
+
+            <!-- SECTION HEAD -->
+            <div class="topicals-section-head" data-aos="fade-up">
+                <h2><span>Explore Our</span> Topical Products</h2>
+                <p>
+                    Cannabis-infused skincare and relief products designed
+                    for targeted comfort and everyday wellness.
+                </p>
+            </div>
+
+            <!-- GRID -->
+            <div class="topicals-grid-gen">
+
+                <div class="topical-card-gen" data-aos="fade-up">
+                    <div class="topical-image-gen" style="background-image:url('./assets/pain-balm.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Pain Balm</h4>
+                        <p>Targeted relief for sore muscles</p>
+                    </div>
+                </div>
+
+                <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="100">
+                    <div class="topical-image-gen" style="background-image:url('./assets/lotions.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Lotions</h4>
+                        <p>Moisturizing and soothing</p>
+                    </div>
+                </div>
+
+                <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="200">
+                    <div class="topical-image-gen" style="background-image:url('./assets/massage-oil.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Massage Oil</h4>
+                        <p>Perfect for relaxation</p>
+                    </div>
+                </div>
+
+                <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="300">
+                    <div class="topical-image-gen" style="background-image:url('./assets/bath-bombs.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Bath Bombs</h4>
+                        <p>Luxurious infused bath experience</p>
+                    </div>
+                </div>
+
+                <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="400">
+                    <div class="topical-image-gen" style="background-image:url('./assets/roll-on.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Roll-On</h4>
+                        <p>Easy application, fast relief</p>
+                    </div>
+                </div>
+
+                <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="500">
+                    <div class="topical-image-gen" style="background-image:url('./assets/patches.png')"></div>
+                    <div class="topical-content-gen">
+                        <h4>Transdermal Patches</h4>
+                        <p>Long-lasting, steady dosing</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: "ease-in-out",
+            once: false
+        });
+    </script>
+
 </body>
+
 </html>

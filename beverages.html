@@ -1,11 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beverages</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/beverages.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    
+  <!-- Navbar -->
+    <nav class=" navbar navbar-expand-xl cannabis-navbar">
+        <div class="container-fluid px-4">
+            <!-- LEFT -->
+            <div class="d-flex align-items-center gap-3">
+                <a href="#" class="back-btn">
+                    <i class="bi bi-arrow-left"></i> Back
+                </a>
+                <a class="navbar-brand logo-brand" href="./index.html">
+                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                </a>
+
+            </div>
+
+            <!-- TOGGLE -->
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- MENU -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2 mt-4 mt-xl-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="bi bi-house"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            <i class="bi bi-info-circle"></i> About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./genetics.html">
+                            <i class="bi bi-diagram-3"></i> Genetics
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./flowers.html">
+                            <i class="bi bi-flower1"></i> Flowers
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./prerolls.html">
+                            <i class="bi bi-box-seam"></i> Prerolls
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./concentrates.html">
+                            <i class="bi bi-droplet"></i> Concentrates
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vape.html">
+                            <i class="bi bi-lightning"></i> Vape
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./edibles.html">
+                            <i class="bi bi-cookie"></i> Edibles
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./beverages.html">
+                            <i class="bi bi-cup-straw"></i> Beverages
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./topicals.html">
+                            <i class="bi bi-bandaid"></i> Topicals
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+
+        </div>
+    </nav>
+    <!-- ================= BEVERAGES HERO ================= -->
+    <section class="beverages-hero-gen">
+        <div class="beverages-hero-overlay"></div>
+
+        <div class="beverages-hero-content" data-aos="zoom-in">
+            <span class="beverages-tag">BEVERAGES</span>
+
+            <h1>
+                Refreshing <br>
+                <span>Cannabis Beverages</span>
+            </h1>
+
+            <p>
+                Crisp, flavorful, and precisely dosed cannabis-infused drinks
+                for every moment.
+            </p>
+        </div>
+    </section>
+
+  
+
+    <!-- ================= BEVERAGES PRODUCTS ================= -->
+    <section class="beverages-products-gen">
+
+        <div class="beverages-container">
+
+            <!-- SECTION HEAD -->
+            <div class="beverages-section-head" data-aos="fade-up">
+                <h2><span>Explore Our</span> Infused Drinks</h2>
+                <p>
+                    From refreshing sodas to potent shots,
+                    discover elevated cannabis beverages crafted to perfection.
+                </p>
+            </div>
+
+            <!-- GRID -->
+            <div class="beverages-grid-gen">
+
+                <div class="beverage-card-gen" data-aos="fade-up">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/infused-sodas.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Infused Sodas</h4>
+                        <p>Refreshing cannabis-infused sodas</p>
+                    </div>
+                </div>
+
+                <div class="beverage-card-gen" data-aos="fade-up" data-aos-delay="100">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/seltzers.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Seltzers</h4>
+                        <p>Light, bubbly, and infused</p>
+                    </div>
+                </div>
+
+                <div class="beverage-card-gen" data-aos="fade-up" data-aos-delay="200">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/tea.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Tea</h4>
+                        <p>Relaxing infused teas</p>
+                    </div>
+                </div>
+
+                <div class="beverage-card-gen" data-aos="fade-up" data-aos-delay="300">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/coffee.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Coffee</h4>
+                        <p>Wake and bake, elevated</p>
+                    </div>
+                </div>
+
+                <div class="beverage-card-gen" data-aos="fade-up" data-aos-delay="400">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/shots.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Shots</h4>
+                        <p>Quick, potent drink shots</p>
+                    </div>
+                </div>
+
+                <div class="beverage-card-gen" data-aos="fade-up" data-aos-delay="500">
+                    <div class="beverage-image-gen" style="background-image:url('./assets/drink-mixes.png')"></div>
+                    <div class="beverage-content-gen">
+                        <h4>Drink Mixes</h4>
+                        <p>Add to any beverage</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: "ease-in-out",
+            once: false
+        });
+    </script>
+
 </body>
+
 </html>
