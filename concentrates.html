@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -33,7 +33,7 @@
                     <i class="bi bi-arrow-left"></i> Back
                 </a>
                 <a class="navbar-brand logo-brand" href="./index.html">
-                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                    <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
                 </a>
 
             </div>
@@ -160,6 +160,12 @@
                     <div class="concentrates-content">
                         <h4>Live Resin</h4>
                         <p>Fresh-frozen, full spectrum extract</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -168,6 +174,12 @@
                     <div class="concentrates-content">
                         <h4>Live Rosin</h4>
                         <p>Solventless, premium quality extract</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -176,6 +188,12 @@
                     <div class="concentrates-content">
                         <h4>Shatter</h4>
                         <p>Glass-like, potent concentrate</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -184,6 +202,12 @@
                     <div class="concentrates-content">
                         <h4>Wax</h4>
                         <p>Soft texture, easy to work with</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -192,6 +216,12 @@
                     <div class="concentrates-content">
                         <h4>Diamonds</h4>
                         <p>Pure THCa crystal formations</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -200,6 +230,12 @@
                     <div class="concentrates-content">
                         <h4>Sauce</h4>
                         <p>Terpene-rich, flavorful extract</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal"
+                            data-bs-target="#concentratesModal" data-title="Live Resin"
+                            data-desc="Fresh-frozen cannabis extract that preserves the full terpene profile for bold flavor and potency."
+                            data-img="./assets/live-resin.png" data-tag="Top Quality">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -208,6 +244,40 @@
         </div>
 
     </section>
+
+    <!-- ================= CONCENTRATES PRODUCT MODAL ================= -->
+    <div class="modal fade" id="concentratesModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="concentratesModalTitle">Concentrate</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-5">
+                            <div class="modal-product-image">
+                                <img id="concentratesModalImg" src="./assets/live-resin-carts.png" width="100%"
+                                    height="100%" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span id="concentratesModalTag" class="concentrates-tag mb-3 d-inline-block">Top</span>
+                            <p id="concentratesModalDesc" class="modal-product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque error modi facere officiis dolorem! Esse tempore placeat odio consequuntur voluptate quod perspiciatis soluta eos nobis eum dolor, aperiam molestiae magnam.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

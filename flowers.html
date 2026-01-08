@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -33,7 +33,7 @@
                     <i class="bi bi-arrow-left"></i> Back
                 </a>
                 <a class="navbar-brand logo-brand" href="./index.html">
-                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                    <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
                 </a>
 
             </div>
@@ -144,7 +144,7 @@
 
             <!-- SECTION TITLE -->
             <div class="flowers-section-head" data-aos="fade-up">
-                <h2> <span  style="color: #66d9ff;">Explore Our</span> Flower Collection</h2>
+                <h2> <span style="color: #66d9ff;">Explore Our</span> Flower Collection</h2>
                 <p>
                     From top-shelf buds to everyday value options,
                     our flower lineup delivers quality for every preference.
@@ -160,6 +160,13 @@
                         <h4>Premium Eighths</h4>
                         <p>3.5g of hand-trimmed, top-shelf flower</p>
                         <span class="flower-tag">Best Seller</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
+
                     </div>
                 </div>
 
@@ -169,6 +176,13 @@
                         <h4>Quarter Ounce</h4>
                         <p>7g of premium, carefully cured cannabis</p>
                         <span class="flower-tag">Popular</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
+
                     </div>
                 </div>
 
@@ -178,6 +192,13 @@
                         <h4>Half Ounce</h4>
                         <p>14g for the regular consumer</p>
                         <span class="flower-tag">Value</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
+
                     </div>
                 </div>
 
@@ -187,6 +208,13 @@
                         <h4>Full Ounce</h4>
                         <p>28g of premium quality flower</p>
                         <span class="flower-tag">Best Value</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
+
                     </div>
                 </div>
 
@@ -196,6 +224,13 @@
                         <h4>Smalls</h4>
                         <p>Budget-friendly smaller buds, same quality</p>
                         <span class="flower-tag">Budget</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
+
                     </div>
                 </div>
 
@@ -205,6 +240,12 @@
                         <h4>Shake</h4>
                         <p>Perfect for rolling, cooking, or infusions</p>
                         <span class="flower-tag">Versatile</span>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#productModal"
+                            data-title="Premium Eighths"
+                            data-desc="3.5g of hand-trimmed, top-shelf cannabis flower with rich aroma and high potency."
+                            data-img="./assets/premium-eighths.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -213,6 +254,37 @@
         </div>
 
     </section>
+
+    <!-- ================= PRODUCT MODAL ================= -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="modalTitle">Premium Eighths</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-5">
+                            <div id="modalImage" class="modal-product-image"> <img src="./assets/premium-eighths.png"
+                                    width="100%" height="100%" alt=""></div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span id="modalTag" class="flower-tag mb-3 d-inline-block">Best Seller </span>
+                            <p id="modalDesc" class="modal-product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dignissimos libero architecto corrupti repellat soluta odit sequi blanditiis, incidunt laudantium iste quaerat quidem facere velit possimus quasi. Magnam, aperiam quisquam.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

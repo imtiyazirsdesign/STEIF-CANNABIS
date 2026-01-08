@@ -234,7 +234,7 @@
     border: 1px solid rgba(0, 200, 255, 0.25);
     border-radius: 18px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+   
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -273,99 +273,6 @@
     }
 
     .seed-shelf {
-        padding: 80px 0;
-    }
-}
-
-/* ================= STATS SECTION ================= */
-.steif-stats {
-    padding: 120px 0;
-    background: linear-gradient(180deg, #020914, #061827);
-    color: #cbd5f5;
-}
-
-/* CONTAINER */
-.stats-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 6%;
-    text-align: center;
-}
-
-/* LABEL */
-.stats-label {
-    display: inline-block;
-    margin-bottom: 14px;
-    padding: 6px 18px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #66d9ff;
-    border: 1px solid rgba(102, 217, 255, 0.4);
-    border-radius: 30px;
-}
-
-/* TITLE */
-.steif-stats h2 {
-    font-size: clamp(32px, 4vw, 46px);
-    margin-bottom: 70px;
-    color: #ffffff;
-}
-
-.steif-stats h2 span {
-    color: #66d9ff;
-}
-
-/* GRID */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
-
-/* CARD */
-.stat-card {
-    padding: 45px 25px;
-    background: rgba(7, 19, 32, 0.7);
-    border: 1px solid rgba(0, 200, 255, 0.25);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 60px rgba(0, 200, 255, 0.3);
-}
-
-/* NUMBER */
-.stat-card h3 {
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #66d9ff;
-}
-
-/* TEXT */
-.stat-card p {
-    font-size: 15px;
-    color: #cbd5f5;
-    line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 991px) {
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 576px) {
-    .stats-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .steif-stats {
         padding: 80px 0;
     }
 }
@@ -543,7 +450,7 @@
     border: 1px solid rgba(0, 200, 255, 0.25);
     border-radius: 18px;
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 30px rgba(0, 200, 255, 0.15);
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -666,7 +573,6 @@
 .cta-btn.primary {
     background: #66d9ff;
     color: #020914;
-    box-shadow: 0 0 25px rgba(102, 217, 255, 0.6);
 }
 
 .cta-btn.primary:hover {

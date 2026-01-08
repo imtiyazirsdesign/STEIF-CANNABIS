@@ -24,7 +24,7 @@
 </head>
 
 <body>
- <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -33,7 +33,7 @@
                     <i class="bi bi-arrow-left"></i> Back
                 </a>
                 <a class="navbar-brand logo-brand" href="./index.html">
-                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                    <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
                 </a>
 
             </div>
@@ -150,7 +150,6 @@
                     for targeted comfort and everyday wellness.
                 </p>
             </div>
-
             <!-- GRID -->
             <div class="topicals-grid-gen">
 
@@ -159,6 +158,12 @@
                     <div class="topical-content-gen">
                         <h4>Pain Balm</h4>
                         <p>Targeted relief for sore muscles</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -167,6 +172,12 @@
                     <div class="topical-content-gen">
                         <h4>Lotions</h4>
                         <p>Moisturizing and soothing</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -175,6 +186,12 @@
                     <div class="topical-content-gen">
                         <h4>Massage Oil</h4>
                         <p>Perfect for relaxation</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -183,6 +200,12 @@
                     <div class="topical-content-gen">
                         <h4>Bath Bombs</h4>
                         <p>Luxurious infused bath experience</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -191,22 +214,70 @@
                     <div class="topical-content-gen">
                         <h4>Roll-On</h4>
                         <p>Easy application, fast relief</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
                 <div class="topical-card-gen" data-aos="fade-up" data-aos-delay="500">
-                    <div class="topical-image-gen" style="background-image:url('./assets/transdermal-patches.png')"></div>
+                    <div class="topical-image-gen" style="background-image:url('./assets/transdermal-patches.png')">
+                    </div>
                     <div class="topical-content-gen">
                         <h4>Transdermal Patches</h4>
                         <p>Long-lasting, steady dosing</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#topicalsModal"
+                            data-title="Pain Balm"
+                            data-desc="Cannabis-infused pain balm formulated for fast-acting, targeted relief of sore muscles and joints."
+                            data-img="./assets/pain-balm.png" data-tag="Relief">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
             </div>
-
         </div>
 
     </section>
+
+    <!-- ================= TOPICALS PRODUCT MODAL ================= -->
+    <div class="modal fade" id="topicalsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="topicalsModalTitle">Topical</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-5">
+                            <div class="modal-product-image">
+                                <img id="topicalsModalImg" src="./assets/pain-balm.png" width="100%" height="100%"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span id="topicalsModalTag" class="topicals-tag mb-3 d-inline-block">Top</span>
+                            <p id="topicalsModalDesc" class="modal-product-desc">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Labore eum aperiam aliquid error id culpa a ab, molestiae, dicta quos
+                                animi consequuntur consectetur placeat numquam qui deserunt officiis nihil temporibus.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

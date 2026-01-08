@@ -104,7 +104,7 @@
     overflow: hidden;
     border: 1px solid rgba(0, 200, 255, 0.25);
     backdrop-filter: blur(10px);
-    box-shadow: 0 0 35px rgba(0, 200, 255, 0.15);
+   
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
@@ -165,3 +165,43 @@
         padding: 90px 0;
     }
 }
+/* ================= VIEW PRODUCT BUTTON ================= */
+.view-product-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid rgba(102, 217, 255, 0.5);
+    color: #66d9ff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.view-product-btn:hover {
+    background: #448fa8;
+   color: white;
+}
+
+/* ================= PRODUCT MODAL ================= */
+.product-modal {
+    background: rgba(7, 19, 32, 0.95);
+    border-radius: 24px;
+    border: 1px solid rgba(102, 217, 255, 0.3);
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+}
+
+.modal-product-image {
+    height: 260px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(102, 217, 255, 0.25);
+}
+
+.modal-product-desc {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cbd5f5;
+}
+

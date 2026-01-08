@@ -24,7 +24,7 @@
 </head>
 
 <body>
-   <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -33,7 +33,7 @@
                     <i class="bi bi-arrow-left"></i> Back
                 </a>
                 <a class="navbar-brand logo-brand" href="./index.html">
-                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                    <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
                 </a>
 
             </div>
@@ -159,6 +159,12 @@
                     <div class="vape-content">
                         <h4>510 Cartridges</h4>
                         <p>Universal fit, premium oil</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -167,6 +173,12 @@
                     <div class="vape-content">
                         <h4>Disposables</h4>
                         <p>Ready to use, no charging needed</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -175,6 +187,12 @@
                     <div class="vape-content">
                         <h4>Live Resin Carts</h4>
                         <p>Full spectrum, maximum flavor</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -183,6 +201,12 @@
                     <div class="vape-content">
                         <h4>Distillate Carts</h4>
                         <p>Pure, potent THC distillate</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -191,6 +215,12 @@
                     <div class="vape-content">
                         <h4>Pod Systems</h4>
                         <p>Proprietary pods for perfect hits</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -199,6 +229,12 @@
                     <div class="vape-content">
                         <h4>Batteries</h4>
                         <p>Quality batteries for your carts</p>
+                        <button class="btn view-product-btn mt-2" data-bs-toggle="modal" data-bs-target="#vapeModal"
+                            data-title="510 Cartridges"
+                            data-desc="Industry-standard 510 cartridges filled with premium cannabis oil for smooth, reliable vaping."
+                            data-img="./assets/cartridges.png" data-tag="Best Seller">
+                            View Product
+                        </button>
                     </div>
                 </div>
 
@@ -207,6 +243,37 @@
         </div>
 
     </section>
+
+    <!-- ================= VAPE PRODUCT MODAL ================= -->
+    <div class="modal fade" id="vapeModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="vapeModalTitle">Vape Product</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row align-items-center g-4">
+
+                        <div class="col-md-5">
+                            <div class="modal-product-image">
+                                <img id="vapeModalImg" src="./assets/Disposables.png" width="100%" height="100%" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                            <span id="vapeModalTag" class="vape-tag mb-3 d-inline-block">Top</span>
+                            <p id="vapeModalDesc" class="modal-product-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam saepe, cupiditate ut ab illo libero debitis, iure fuga, dolorum molestiae delectus eveniet quos perferendis aliquam quo? Dolorum voluptate illo harum.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
