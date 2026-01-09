@@ -143,3 +143,28 @@
     .genetics-grid { grid-template-columns: 1fr; }
     .genetics-list { padding: 90px 0; }
 }
+.view-product-btn{
+    width:100%;
+    padding:10px;
+    border-radius:30px;
+    background:transparent;
+    border:1px solid rgba(102,217,255,.5);
+    color:#66d9ff;
+    transition:.3s;
+}
+.view-product-btn:hover{
+    background:#448fa8;
+    color:#fff;
+}
+
+.product-modal{
+    background:rgba(7,19,32,.95);
+    border-radius:24px;
+    border:1px solid rgba(102,217,255,.3);
+    backdrop-filter:blur(12px);
+    color:#fff;
+}
+.modal-product-desc{
+    color:#cbd5f5;
+    line-height:1.8;
+}

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <!-- Navbar -->
+    <!-- Navbar -->
     <nav class=" navbar navbar-expand-xl cannabis-navbar">
         <div class="container-fluid px-4">
             <!-- LEFT -->
@@ -29,7 +29,7 @@
                     <i class="bi bi-arrow-left"></i> Back
                 </a>
                 <a class="navbar-brand logo-brand" href="./index.html">
-                     <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
+                    <img src="./assets/Stieflogo.png" alt="Steif Cannabis Logo">
                 </a>
 
             </div>
@@ -114,11 +114,11 @@
     </nav>
 
     <!-- ================= GENETICS HERO ================= -->
-    <section class="genetics-hero">
+    <section class="genetics-hero"  >
 
         <div class="genetics-hero-overlay"></div>
 
-        <div class="genetics-hero-content">
+        <div class="genetics-hero-content" data-aos="zoom-in">
             <span class="genetics-hero-tag">OUR GENETICS</span>
 
             <h1>
@@ -135,9 +135,8 @@
     </section>
 
     <!-- ================= GENETICS LIST ================= -->
-    <section class="genetics-list" data-aos="fade-up">
-
-        <div class="genetics-list-container">
+    <section class="genetics-list" data-aos="zoom-in">
+        <div class="genetics-list-container" >
 
             <div class="genetics-list-header">
                 <h2>Our <span>Genetics</span></h2>
@@ -146,76 +145,147 @@
 
             <div class="genetics-grid">
 
+                <!-- CARD -->
                 <div class="genetics-card indica">
-                    <div class="genetics-card-top">
-                        <h4>OG Kush</h4>
-                        <span class="strain-tag">Indica</span>
-                    </div>
+                    <img src="./assets/OG-kush.png" width="100%" height="200px">
+                    <h4 class="mt-2">OG Kush</h4>
+                    <span class="strain-tag">Indica</span>
                     <span class="thc">THC: 22–26%</span>
                     <p>Classic earthy pine with hints of lemon</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="OG Kush" data-type="Indica" data-thc="22–26%"
+                        data-desc="Classic earthy pine flavor with subtle lemon notes delivering deeply relaxing effects."
+                        data-img="./assets/OG-kush.png">
+                        View Product
+                    </button>
                 </div>
 
                 <div class="genetics-card hybrid">
-                    <div class="genetics-card-top">
-                        <h4>Blue Dream</h4>
-                        <span class="strain-tag">Hybrid</span>
-                    </div>
+                    <img src="./assets/Blue-dream.png"  width="100%" height="200px">
+                    <h4 class="mt-2">Blue Dream</h4>
+                    <span class="strain-tag">Hybrid</span>
                     <span class="thc">THC: 20–24%</span>
                     <p>Sweet berry aroma with balanced effects</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="Blue Dream" data-type="Hybrid" data-thc="20–24%"
+                        data-desc="Sweet berry aroma paired with uplifting cerebral effects and full-body relaxation."
+                        data-img="./assets/blunts.png">
+                        View Product
+                    </button>
                 </div>
 
                 <div class="genetics-card sativa">
-                    <div class="genetics-card-top">
-                        <h4>Sour Diesel</h4>
-                        <span class="strain-tag">Sativa</span>
-                    </div>
+                    <img src="./assets/Sour-diesel.png"  width="100%" height="200px">
+                    <h4 class="mt-2">Sour Diesel</h4>
+                    <span class="strain-tag">Sativa</span>
                     <span class="thc">THC: 19–25%</span>
                     <p>Pungent diesel fuel aroma, energizing</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="Sour Diesel" data-type="Sativa" data-thc="19–25%"
+                        data-desc="Strong diesel aroma delivering fast-acting, energizing and creative effects."
+                        data-img="./assets/Sour-diesel.png">
+                        View Product
+                    </button>
                 </div>
 
                 <div class="genetics-card hybrid">
-                    <div class="genetics-card-top">
-                        <h4>Girl Scout Cookies</h4>
-                        <span class="strain-tag">Hybrid</span>
-                    </div>
+                    <img src="./assets/Girl-scout-cookies.png"  width="100%" height="200px">
+                    <h4 class="mt-2">Girl Scout Cookies</h4>
+                    <span class="strain-tag">Hybrid</span>
                     <span class="thc">THC: 25–28%</span>
                     <p>Sweet and earthy with euphoric effects</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="Girl Scout Cookies" data-type="Hybrid" data-thc="25–28%"
+                        data-desc="Sweet earthy flavor with strong euphoric and full-body effects."
+                        data-img="./assets/Girl-scout-cookies.png">
+                        View Product
+                    </button>
                 </div>
 
                 <div class="genetics-card hybrid">
-                    <div class="genetics-card-top">
-                        <h4>Gorilla Glue</h4>
-                        <span class="strain-tag">Hybrid</span>
-                    </div>
+                    <img src="./assets/Gorilla0glue.png"  width="100%" height="200px">
+                    <h4 class="mt-2">Gorilla Glue</h4>
+                    <span class="strain-tag">Hybrid</span>
                     <span class="thc">THC: 24–28%</span>
                     <p>Pine and chocolate notes, heavy hitting</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="Gorilla Glue" data-type="Hybrid" data-thc="24–28%"
+                        data-desc="Heavy-hitting strain with pine and chocolate notes delivering deep relaxation."
+                        data-img="./assets/Gorilla0glue.png">
+                        View Product
+                    </button>
                 </div>
 
                 <div class="genetics-card indica">
-                    <div class="genetics-card-top">
-                        <h4>Purple Punch</h4>
-                        <span class="strain-tag">Indica</span>
-                    </div>
+                    <img src="./assets/Purple-punch.png"  width="100%" height="200px">
+                    <h4 class="mt-2">Purple Punch</h4>
+                    <span class="strain-tag">Indica</span>
                     <span class="thc">THC: 20–24%</span>
                     <p>Grape candy sweetness, deeply relaxing</p>
+
+                    <button class="btn view-product-btn" data-bs-toggle="modal" data-bs-target="#geneticsModal"
+                        data-title="Purple Punch" data-type="Indica" data-thc="20–24%"
+                        data-desc="Sweet grape candy flavor delivering deeply relaxing and calming effects."
+                        data-img="./assets/Purple-punch.png">
+                        View Product
+                    </button>
                 </div>
 
             </div>
-
         </div>
-
     </section>
 
-    <!-- Bootstrap JS -->
+    <!-- ================= MODAL ================= -->
+    <div class="modal fade" id="geneticsModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-md-5">
+                            <img id="modalImg" class="w-100 rounded-4">
+                        </div>
+
+                        <div class="col-md-7">
+                            <span id="modalType" class="strain-tag mb-2 d-inline-block"></span>
+                            <p id="modalThc" class="thc"></p>
+                            <p id="modalDesc" class="modal-product-desc"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <!-- Add Animation on scroll -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script>
-        AOS.init({
-            duration: 800,
-            easing: "ease-in-out",
-            once: false
+        AOS.init({ duration: 800 });
+
+        const geneticsModal = document.getElementById("geneticsModal");
+        geneticsModal.addEventListener("show.bs.modal", function (e) {
+            const btn = e.relatedTarget;
+
+            document.getElementById("modalTitle").innerText = btn.dataset.title;
+            document.getElementById("modalType").innerText = btn.dataset.type;
+            document.getElementById("modalThc").innerText = "THC: " + btn.dataset.thc;
+            document.getElementById("modalDesc").innerText = btn.dataset.desc;
+            document.getElementById("modalImg").src = btn.dataset.img;
         });
     </script>
 </body>
